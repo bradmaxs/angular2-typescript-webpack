@@ -1,0 +1,24 @@
+<h1>About Component</h1>
+<p>Another component in the application.</p>
+<pre>
+src/
+ |-app/
+   |-about/
+     |-about.component.html
+     |-about.component.ts
+</pre>
+<p>The component will need to be imported into app.component.ts.</p>
+<pre>
+import {AboutComponent} from './about/about.component';
+</pre>
+<p>And the route will also have to be added as well.</p>
+<pre>
+@RouteConfig([
+  ...
+  {
+    path: '/about',
+    name: 'About',
+    component: AboutComponent
+  }
+])
+</pre>

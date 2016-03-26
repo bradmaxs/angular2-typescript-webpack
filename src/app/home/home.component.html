@@ -1,0 +1,33 @@
+<h1>Home Component</h1>
+
+<tabs>
+  <tab title="How This Works">
+    <p>This will be a small tutorial of how this was set up...</p>
+  </tab>
+  <tab title="Home Component">
+    <p>The home component serves as the default route component.</p>
+    <pre>
+    src/
+     |-app/
+       |-home/
+         |-home.component.html
+         |-home.component.ts
+    </pre>
+    <p>The component will need to be imported into app.component.ts.</p>
+    <pre>
+    import {HomeComponent} from './home/home.component';
+    </pre>
+    <p>And the route will also have to be added as well.</p>
+    <pre>
+    @RouteConfig([
+      {
+        path: '/',
+        name: 'Home',
+        component: HomeComponent,
+        useAsDefault: true
+      }
+    ])
+    </pre>
+  </tab>
+</tabs>
+
